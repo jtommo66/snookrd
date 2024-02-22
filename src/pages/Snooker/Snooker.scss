@@ -17,6 +17,19 @@
     height: 77vh;
   }
 
+  &__y-g-br-balls {
+    display: flex;
+    justify-content: space-evenly;
+    width: 10rem;
+    align-items: center;
+    padding-top: 3rem;
+  }
+
+  &__b-p-balls {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__ball {
     border-radius: 50%;
     height: 1.5rem;
@@ -36,6 +49,7 @@
     &--blue {
       background-color: blue;
       border-color: blue;
+      margin-bottom: 2rem;
     }
     &--pink {
       background-color: pink;
@@ -44,6 +58,12 @@
     &--red {
       background-color: red;
       border-color: red;
+      width: 5rem;
+      height: 4rem;
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      border-bottom: 1.5rem solid red;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     }
     &--black {
       background-color: black;

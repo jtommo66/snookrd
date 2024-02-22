@@ -14,7 +14,7 @@ function Snooker() {
           <button className="snooker__ball snooker__ball--pink"></button>
         </div>
         <div className="snooker__r-balls">
-          <button className="snooker__ball snooker__ball--red"></button>
+          <button className="snooker__ball--red"></button>
         </div>
         <div className="snooker__bl-ball">
           <button className="snooker__ball snooker__ball--black"></button>
