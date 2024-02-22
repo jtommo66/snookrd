@@ -1,5 +1,14 @@
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 function Header() {
-  return <h1>This is the header</h1>;
+  return (
+    <div className="header">
+      <Link>Rules</Link>
+      <h1>Snookrd</h1>
+      <Link>Reset</Link>
+    </div>
+  );
 }
+
+export default Header;

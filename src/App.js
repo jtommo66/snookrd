@@ -1,16 +1,16 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
-import background from "./images/snookerbackground.jpg";
+import Header from "./components/Header/Header";
+import Snooker from "./pages/Snooker/Snooker";
 
 function App() {
   return (
-    <div
-      className="App"
-      style={{
-        backgroundImage: `url(${background})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    ></div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Snooker />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

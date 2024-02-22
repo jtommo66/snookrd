@@ -1,3 +1,5 @@
+@use "./styles/partials/variables" as *;
+
 .App {
-  height: 91vh;
+  background-color: $primary-color;
 }
